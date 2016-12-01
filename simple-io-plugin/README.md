@@ -106,8 +106,8 @@ NOTE: this function returns a JSON object with the content of a directory, in a 
 if this function fails, an error message will be returned.
 
 ```
-io.get().listDirectory(
-  io.get().PROGRAMFILES,
+plugin.get().listDirectory(
+  plugin.get().PROGRAMFILES,
   function(status, result) { 
     if(status === true) {
 	  directory = JSON.parse(result);
