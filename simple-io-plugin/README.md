@@ -109,17 +109,15 @@ if this function fails, an error message will be returned.
 plugin.get().listDirectory(
   plugin.get().PROGRAMFILES,
   function(status, result) { 
-  
     if(status === true) {
 	  directory = JSON.parse(result);
-	  directory.map(function(content) {
-	  
+	  directory.map(function(content) { 
 	    if(content.type == "file") {
 	      console.log(content.name);
-	    } else {
+		} else {
 	      console.log(result);
-            }
-	  });
+		}
+	});
   }
 ```
 
